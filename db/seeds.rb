@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Cheese.destroy_all
+
+puts "Seeding data..."
+
+puts "Creating cheeses..."
+
+Cheese.create!(name: 'Cheddar', price: 3, is_best_seller: true)
+Cheese.create!(name: 'Pepper Jack', price: 4, is_best_seller: true)
+Cheese.create!(name: 'Limburger', price: 8, is_best_seller: false)
+
+
+puts "Done seeding!"
